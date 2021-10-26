@@ -6,7 +6,7 @@
 
 --SELECT * FROM Customers WHERE CustomerID LIKE '[B][l]%';
 
---SELECT TOP 100 * FROM Customers
+--SELECT TOP 100 * FROM Orders
 
 --SELECT * FROM Customers 
 --WHERE PostalCode = '1010' OR PostalCode = '3012' OR PostalCode = '12209' OR PostalCode = '05023';
@@ -30,7 +30,29 @@
 --SELECT MIN(Quantity) AS SmallestAmount, MAX(Quantity) AS HighestAmount, AVG(Quantity) AS AverageAmount
 --FROM [Order Details];
 
-SELECT MIN(Quantity) AS SmallestAmount, MAX(Quantity) AS HighestAmount, AVG(Quantity) AS AverageAmount
-FROM [Order Details]
-GROUP BY OrderID
+--SELECT MIN(Quantity) AS SmallestAmount, MAX(Quantity) AS HighestAmount, AVG(Quantity) AS AverageAmount
+--FROM [Order Details]
+--GROUP BY OrderID
+
+--SELECT CustomerID FROM Orders WHERE OrderID = 10290
+
+--SELECT * FROM Orders
+--INNER JOIN Customers
+--ON Orders.CustomerID = Customers.CustomerID
+
+--SELECT * FROM Orders
+--LEFT JOIN Customers
+--ON Orders.CustomerID = Customers.CustomerID
+
+--SELECT * FROM Orders
+--RIGHT JOIN Customers
+--ON Orders.CustomerID = Customers.CustomerID
+
+--SELECT FirstName FROM Employees
+--WHERE ReportsTo IS NULL;
+
+--SELECT FirstName FROM Employees
+--WHERE ReportsTo = 2
+
+
 
